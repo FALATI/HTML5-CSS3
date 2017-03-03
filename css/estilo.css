@@ -1,0 +1,173 @@
+#container{
+	margin: 0 auto;
+	width: 960px;
+	height: auto;
+}
+.topo{
+	width: 100%;
+	height: 250px;
+}
+/* inicio menu*/
+.menu{
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+}
+.menu ul{
+	padding: 0;
+	margin: 0;
+	background-color: #ededed;
+	list-style: none;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+.menu ul li{
+	display: inline;
+}
+.menu ul li a{
+	padding: 12px 30px;
+	display: inline-block;
+	background-color: #ededed;
+	color:#333;
+	text-decoration: none;
+	border-bottom: #ededed solid 3px;
+}
+.menu ul li a:hover{
+	background-color: #d6d6d6;
+	color: #6d6d6d;
+	border-bottom: solid 3px #0077c1;
+}
+/*fim menu*/
+
+.slides{
+	width: 600px;
+	margin: auto;
+	overflow: hidden;
+	float:left;
+}
+.slides ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	-webkit-animation: exemplo 20s infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in;
+}
+.slides ul li{
+	list-style: none;
+}
+
+@keyframes exemplo{
+	0%{margin-left: 0;}
+	20%{margin-left: 0;}
+
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
+.artigo{
+	width: 100%;
+	height: auto;
+	float: left;
+	display: block;
+}
+.secao{
+	width: 800px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.text2{
+	width: 355px;
+	height: 300px;
+	margin-top: 17px;
+	float: right;
+}
+.footer{
+	width: 960px;
+	height: 80px;
+	background-color: #ededed;
+	float: left;
+	margin-top: 40px;
+}
+header{
+	font-variant: small-caps;
+	font-family: 'Open Sans', sans-serif;
+	font-style: 18px;
+	color: #483D8B;
+}
+span{
+	text-align: center;
+	padding: 6px;
+	border-radius: 10px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #DCDCDC;
+}
+h2{
+	font-family: 'Open Sans', sans-serif;
+	color: #483D8B;
+}
+.text-footer{
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 10px;
+}
+.missao{
+	font-family: 'Open Sans', sans-serif;
+}
+.missao h3{
+	color:#483D8B;
+}
+.links{
+	margin-top: 10px;
+	float: left;
+}
+.links a{
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color: #777;
+}
+.links a:hover{
+	color:#FF0000;
+}
+
+.produtos{
+	margin-top: 10px;
+}
+.preto{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: 1001;
+	-moz-opacity= 0.5;
+	opacity: 50;
+	filter: alpha(opacity=50);
+}
+.branco{
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: solid 16px #777;
+	background: url(../img/carousel.jpg);
+	background-repeat: no-repeat;
+	z-index: 1002;
+	overflow: auto;
+}
